@@ -1,13 +1,11 @@
 package application.model;
 
-import java.io.Serializable;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 //Base class of all system users. Passwords are stored as SHA-256 hashes.
-public abstract class User implements Serializable {
-    private static final long serialVersionUID = 1L;
+public abstract class User{
 
     private final String username;
     private final String fullName;
